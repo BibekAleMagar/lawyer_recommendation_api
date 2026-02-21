@@ -1,0 +1,8 @@
+services:
+  ml-service:
+    build: .
+    image: ml-service:latest
+    container_name: fastapi_app
+    ports:
+      - "80:8000" # Maps Server Port 80 to Container Port 8000
+    restart: always
